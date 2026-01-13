@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Camera Movements Gallery</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>AI Camera Movements Prompt Gallery</h1>
+        <p>영상 생성 AI를 위한 42가지 카메라 무브먼트 가이드</p>
+    </header>
+
+    <div class="sticky-header">
+        <div class="search-wrapper">
+            <div class="search-container">
+                <div class="search-box">
+                    <input type="text" id="search-input" placeholder="기법 명칭(영문/한글) 또는 내용을 검색하세요...">
+                    <button id="reset-btn" title="검색 초기화">
+                        <svg viewBox="0 0 24 24" width="24" height="24">
+                            <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <nav class="filter-wrapper">
+            <div class="filter-container">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="dolly">Dolly/Track</button>
+                <button class="filter-btn" data-category="zoom">Zoom/Lens</button>
+                <button class="filter-btn" data-category="drone">Drone/Crane</button>
+                <button class="filter-btn" data-category="pan">Pan/Tilt</button>
+            </div>
+        </nav>
+    </div>
+
+    <main class="container" id="gallery"></main>
+
+    <footer class="bottom-banner">
+        이 영상은 <a href="https://aishotstudio.com/42-camera-movements-ai-prompts/" target="_blank">https://aishotstudio.com/42-camera-movements-ai-prompts/</a> 를 기반으로 클론코딩 연습한 개인 작업물입니다.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
